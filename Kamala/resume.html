@@ -1,0 +1,425 @@
+<html>
+    <head> 
+        <title>Chintala Kamala Kumari</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="keywords" content="htmlcss bootstrap menu, fixed top, navbar, menu CSS examples" />
+        <meta name="description" content="Portfolio Website of Thota Phaneendhar" />  
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link href="./resume.css" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendmail(){
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var subject = $('#msg_subject').val();
+            var message = $('#message').val()
+            var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message+'<br>';
+            Email.send({
+              SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+              To: "chkkamala@gmail.com",
+              From: email,
+              Subject: "A new message from "+name+" through your website",
+              Body: Body
+            }).then(
+              message =>{
+                if(message=='OK'){
+                alert('Your mail has been send. Thank you for connecting.');
+                }
+                else{
+                  console.error (message);
+                  alert('There is error at sending message. ')
+                }
+              }
+            );
+          }
+        </script>
+      </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kamala Kumari</a>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+             <div class="collapse navbar-collapse" id="main_nav">
+               <ul class="navbar-nav ms-auto">
+                   <li class="nav-item"><a class="nav-link" href="#home"> Home </a></li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Education </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a class="dropdown-item" href="#skills"> Skills </a></li>
+                      <li><a class="dropdown-item" href="#academics"> Academics</a></li>
+                      <li><a class="dropdown-item" href="#projects"> Projects </a></li>
+                      <li><a class="dropdown-item" href="#certifications"> Certifications </a></li>
+                      <li><a class="dropdown-item" href="#myprojects"> My Projects </a></li>
+                    </ul>
+                </li>
+                   <li class="nav-item"><a class="nav-link" href="#contact"> Contact </a></li>
+               </ul>
+             </div>
+            </div>
+           </nav>
+          <div class="container-fluid" id = "home" align = "center">
+            <br><br><br>
+            <h1 style="font-family: Pristina">Kamala Kumari Chintala</h1><br>
+            <img src="./images/mypic.jpg" class="img-responsive" alt="..."><br><br>
+            <h1 style="font-family: Pristina"><i>Java and Salesforce Developer</i></h1><br>
+            <ul class="list-inline" style="color: aliceblue;">
+                <li class = "list-inline-item"><a href="https://www.facebook.com/profile.php?id=100007971047502"><i class="fa fa-facebook"></i></a></li>
+                <li class = "list-inline-item"><a href="https://twitter.com/KamalaKumariCH/"><i class="fa fa-twitter"></i></a></li>
+                <li class = "list-inline-item"><a href="https://www.instagram.com/kamalakumari_chintala/"><i class="fa fa-instagram"></i></a></li>
+                <li class = "list-inline-item"><a href="https://www.linkedin.com/in/kamalakumari-chintala/"><i class="fa fa-linkedin"></i></a></li>
+                <li class = "list-inline-item"><a href="https://github.com/KamalaKumari"><i class="fa fa-github"></i></a></li>
+                <li class = "list-inline-item"><a href="https://www.hackerrank.com/Phaneendhar"><i class="fab fa-hackerrank"></i></a></li>
+                <li class = "list-inline-item"><a href="tel:9949817534"><i class="fa fa-phone"></i></a></li>
+                <li class = "list-inline-item"><a href="https://t.me/KamalaKumari_Chintala"><i class="fa fa-telegram"></i></a></li>
+                <li class = "list-inline-item"><a href="https://wa.me/9949817534"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <div class="container-fluid" id = "skills">
+            <br><br><br>
+            <h1 style="font-family: Pristina; text-align: center;">My Technical Skills</h1><br>
+            <div class="row row-cols-3 row-cols-md-6">
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/java.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Java</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/python.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/mongodb.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Unity 3D</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/html.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">HTML5</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/css.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">CSS3</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/js.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">JavaScript</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/reactjs.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">C#</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/native.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Salesforce Developer Catalyst</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/nodejs.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">MySQL</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/postgresql.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">PostgreSQL</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/github.png" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">GitHub</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-15">
+                  <img src="./images/vscode.jpg" class="card-img-top img-responsive" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Visual Studio Code</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="container-fluid" id = "academics">
+            <br><br><br>
+            <h1 style="font-family: Pristina; text-align: center;">My Academics</h1><br>
+            <div class="row" align = "center">
+              <div class="col md-3">
+                <p>Master of Technology in Computer Science and Technology</p>
+              </div>
+              <div class="col md-3">
+                <p>SRKR Engineering College - Andhra University</p>
+              </div>
+              <div class="col md-3">
+                <p>August 2015 - March 2018</p>
+              </div>
+              <div class="col md-3">
+                <p>CGPA: 8.07</p>
+              </div>
+            </div>
+            <br>
+            <div class="row" align = "center">
+              <div class="col md-3">
+                <p>Bachelor of Technology - Computer Science Engineering</p>
+              </div>
+              <div class="col md-3">
+                <p>SIR CRR College of Engineering - Andhra University</p>
+              </div>
+              <div class="col md-3">
+                <p>Jul 2012 - April 2015</p>
+              </div>
+              <div class="col md-3">
+                <p>CGPA: 8.07</p>
+              </div>
+
+            </div>
+            <br>
+            <div class="row" align = "center">
+
+              <div class="col md-3">
+                <p>Diploma in Computer Engineering</p>
+              </div>
+              <div class="col md-3">
+                <p>SIR CRR Polytechnic College</p>
+              </div>
+              <div class="col md-3">
+                <p>September 2009 - Apr 2012</p>
+              </div>
+              <div class="col md-3">
+                <p>Percentage: 78.2</p>
+              </div>
+
+            </div>
+            <br>
+            <div class="row" align = "center">
+
+              <div class="col md-3">
+                <p>SSC</p>
+              </div>
+              <div class="col md-3">
+                <p>CSI Alexander Girls High School</p>
+              </div>
+              <div class="col md-3">
+                <p>Jun 2008 - Mar 2009</p>
+              </div>
+              <div class="col md-3">
+                <p>Percentage: 71</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="container-fluid" id = "projects">
+            <br><br><br>
+            <h1 style="font-family: Pristina; text-align: center;">My Projects</h1><br>
+            <div class="row row-cols-1 row-cols-md-2 g-1">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Placement Prep Assistant - Mobile</h5>
+                    <p class="card-text" style="font-weight: bold;">Role : Full Stack Developer</p>
+                    <p class="card-text"> Description: Developed a mobile application using React-Native for students for placement purpose. This application helps the students to prepare for a placement by creating their own strategy based on their levels and notifies every day about the strategy which was created by student</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: React Native, Nodejs, MongoDB, Heroku</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Cloud Security through Honeypot</h5>
+                    <p class="card-text" style="font-weight: bold;">Role: Programmer</p>
+                    <p class="card-text">Description: Developed a solution using java which gives us information about the hacker trying to hack our user’s website</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: Java, Oracle SQL, NetBeans IDE</p>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+            <div class="row row-cols-1 row-cols-md-2 g-1">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Movies Data Analysis and Visualization</h5>
+                    <p class="card-text" style="font-weight: bold;">Role : Team Member</p>
+                    <p class="card-text"> Description: Developed a website with dashboard which displays the analysis and different interactive visualisations of different movies</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: Python, Streamlit, Visual Studio Code</p>
+                    <p class="card-text" style="font-weight: bold;">URL: <a href="">Movies Data Analysis and Visualization</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="container-fluid" id = "certifications" align="center">
+            <br><br><br>
+            <h1 style="font-family: Pristina; text-align: center;">My Certifications</h1><br>
+            <ul style="list-style: none;">
+              <li><a href = "https://www.hackerrank.com/certificates/e8dda3a5d153">Python Skill Assessment Certificate from Hacker Rank</a></li>
+              <li><a href = "https://www.hackerrank.com/certificates/c4293c095301">Java Skill Assessment Certificate from Hacker Rank</a></li>
+              <li><a href = "https://www.hackerrank.com/certificates/364758c56eaf">Problem Basic Skill Assessment Certificate from Hacker Rank</a></li>
+              <li><a href = "https://www.hackerrank.com/certificates/deaff7eccd06">React Basic Skill Assessment Certificate from Hacker Rank</a></li>
+              <li><a href = "https://www.hackerrank.com/certificates/1e0ef361a911">SQL Basic Skill Assessment Certificate from Hacker Rank</a></li>
+              <li><a href = "https://coursera.org/share/9a61b21f753b91b00d5facf5598a63cb">Big Data Essentials: HDFS, MapReduce and Spark RDD Course Certificate from Coursera (Yandex)</a></li>
+              <li><a href = "https://coursera.org/share/7afa41fd0cdd412bdb0c437a3fb0dcbd">Python Basics Course Certificate from Coursera (University of Michigan)</a></li>
+              <li><a href = "https://coursera.org/share/4f6bd7508d902dcb804fa5a6d9aaf2f0">Introduction to HTML5 Course Certificate from Coursera (University of Michigan)</a></li>
+            </ul>
+          </div><br>
+          <div class="container-fluid" id = "myprojects">
+            <br><br><br>
+            <h1 style="font-family: Pristina; text-align: center;">Projects Done by My Interest</h1><br>
+            <div class="row row-cols-1 row-cols-md-2 g-1">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">MSIT 2019 Placement Application </h5>
+                    <p class="card-text" style="font-weight: bold;">Role : Full Stack Developer</p>
+                    <p class="card-text"> Description: Developed a webpage for displaying all our batch placement details</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: React JS, NodeJS, MongoDB, Heroku</p>
+                    <p class="card-text" style="font-weight: bold;">URL: <a href="https://msitplacement2019.netlify.app/">MSIT 2019 Placement</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Website on Heroine Payal Rajput</h5>
+                    <p class="card-text" style="font-weight: bold;">Role: Full Stack Developer</p>
+                    <p class="card-text">Description: Developed a solution using java which gives us information</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: React JS, NodeJS, MongoDB, Heroku</p>
+                    <p class="card-text" style="font-weight: bold;">URL: <a href="https://payalrajputwebsite.netlify.app/">Payal Rajput</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-1">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">My Personal Website </h5>
+                    <p class="card-text" style="font-weight: bold;">Role : UI Developer</p>
+                    <p class="card-text"> Description: Developed a webpage based on my portfolio with my interest.</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: HTML5, CSS3</p>
+                    <p class="card-text" style="font-weight: bold;">URL: <a href="https://tphani-portfolio.netlify.app/personal/resume.html">My Personal Website</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Book Review Hub</h5>
+                    <p class="card-text" style="font-weight: bold;">Role: Full Stack Developer</p>
+                    <p class="card-text">Description: Developed a application for reviewing good reads books</p>
+                    <p class="card-text" style="font-weight: bold;">Technologies: Python Flask, SQLAlchemy, HTML5, CSS3, Heroku</p>
+                    <p class="card-text" style="font-weight: bold;">URL: <a href="https://sadprojectone2019501026.herokuapp.com/register">Book Review Hub</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="container-fluid" id = "contact">
+            <br><br><br>
+            <div class="container">
+              <div class="container">
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                        <h1 class="section-title">Love to Hear From You</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Section Titile -->
+                    <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                      <p>In Academics:</p>
+                      <ul>
+                        <li>I worked as a front end developer and a back end developer</li>
+                        <li>I worked as a Java developer</li>
+                      </ul>
+                      <p>I can say that I can work as a Full Stack Developer</p>
+                      <p>I can say that I can work as a Java Developer</p>
+                    </div>
+                    <!-- contact form -->
+                    <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                        <form class="shake" role="form" action="javascript:sendmail()" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                            <!-- Name -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="name">Name</label>
+                              <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                              <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- email -->
+                            <div class="form-group label-floating">
+                              <label class="control-label" for="email">Email</label>
+                              <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                              <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- Subject -->
+                            <div class="form-group label-floating">
+                              <label class="control-label">Subject</label>
+                              <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                              <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- Message -->
+                            <div class="form-group label-floating">
+                                <label for="message" class="control-label">Message</label>
+                                <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div><br>
+                            <!-- Form Submit -->
+                            <div class="form-submit mt-5">
+                                <!-- <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                                <div id="msgSubmit" class="h3 text-center hidden"></div> -->
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <div class="clearfix"></div><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+    </body>
+</html>
