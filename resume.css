@@ -1,0 +1,127 @@
+#home {
+    height: 95vh;
+    background-image: url("./images/b.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    padding: auto;
+}
+
+#home a{
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 2vh;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fab:hover{
+    opacity: 0.7;
+}
+.card-img-top {
+    width: 100px;
+    height: 100px;
+}
+#skills .card-body {
+    font-size: 200vh;
+}
+#contact {
+    height: 95vh;
+    background-image: url("./images/contactbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    padding: auto;
+}
+#academics {
+    height: 95vh;
+    background-image: url("./images/academicsbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    padding: auto;
+}
+#academics p {
+    font-size: 3vh;
+}
+@media screen and (max-width: 600px) {
+    #home {
+        height: 100vh;
+        background-image: url("./images/background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: aliceblue;
+        background-position: center;
+        background-size: cover;
+        padding: auto;
+    }
+
+    #contact {
+    height: 150vh;
+    background-image: url("./images/contactbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    padding: auto;
+    }
+    #academics {
+        height: 100vh;
+        background-image: url("./images/academicsbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: aliceblue;
+        background-position: center;
+        background-size: cover;
+        padding: auto;
+    }
+    #academics p {
+        font-size: 2vh;
+    }
+}
+
+#certifications {
+    height: 95vh;
+    /* background: linear-gradient(rgba(0,0,0,0.6)); */
+    background-image: url("./images/certbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    background-position: center;
+    background-size: cover;
+    padding: auto;
+}
+
+/* #certifications a{
+    text-decoration: none;
+    line-height: 2;
+    color: whitesmoke;
+} */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+    #certifications a {
+        text-decoration: none;
+        line-height: 2;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    #certifications a {
+        text-decoration: none;
+        line-height: 2;
+        color: whitesmoke;
+        font-size: 15px;
+    }
+  }
